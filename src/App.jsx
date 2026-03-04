@@ -1,8 +1,8 @@
 import React from "react";
-import ProfileCard from "./Day1ProfileCard/ProfileCard";
+import SignupPage from "./Day3SignupPage/SignupPage";
 
 function App() {
-  return <ProfileCard />;
+  return <SignupPage />;
 }
 
 export default App;

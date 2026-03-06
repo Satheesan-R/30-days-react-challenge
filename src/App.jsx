@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import ProfileCard from "./Day1ProfileCard/ProfileCard";
 import LoginPage from "./Day2LoginPage/LoginPage";
 import SignupPage from "./Day3SignupPage/SignupPage";
+import LandingHero from "./Day4LandingPage/LandingHero";
 import "./App.css";
 
 function App() {
-  const [day, setDay] = useState(3); // change number to render different day
+  const [day, setDay] = useState(4); // change number to render different day
 
   const renderPage = () => {
     switch (day) {
       case 1: return <ProfileCard />;
       case 2: return <LoginPage />;
       case 3: return <SignupPage />;
+      case 4: return <LandingHero />;
       default: return <ProfileCard />;
     }
   };
@@ -36,6 +38,12 @@ function App() {
           onClick={() => setDay(3)}
         >
           Day 3
+        </button>
+        <button
+          className={day === 4 ? "active" : ""}
+          onClick={() => setDay(4)}
+        >
+          Day 4
         </button>
       </div>
       {renderPage()}

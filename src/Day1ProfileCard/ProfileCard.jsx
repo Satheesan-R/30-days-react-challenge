@@ -8,10 +8,13 @@ const ProfileCard = () => {
         <img
           className={styles.avatar}
           src={process.env.PUBLIC_URL + "/IMG00098.JPG.jpeg"}
-          alt="Profile"
+          alt="Rajasekar Satheesan"
         />
+        <p className={styles.role}>Frontend Developer</p>
         <h2 className={styles.name}>Rajasekar Satheesan</h2>
-        <p className={styles.bio}>Frontend Developer | React Enthusiast | UI Lover</p>
+        <p className={styles.bio}>
+          React-focused developer building clean, responsive user interfaces.
+        </p>
         <div className={styles.socials}>
           <a href="https://github.com/Satheesan-R/" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/rajasekar-satheesan-460208332/" target="_blank" rel="noreferrer">LinkedIn</a>

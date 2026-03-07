@@ -10,7 +10,7 @@ const journey = [
 		description: "Learned basics of web UI and responsive design.",
 	},
 	{
-		year: "2025",
+		year: "2026",
 		title: "Built React Projects",
 		description: "Created challenge pages and improved component structure.",
 	},
@@ -38,8 +38,7 @@ const AboutMe = () => {
 					<div>
 						<h2>Rajasekar Satheesan</h2>
 						<p>
-							I am a React-focused developer who enjoys building simple,
-							responsive, and user-friendly web pages.
+							I am a passionate developer who loves building beautiful and responsive web applications.
 						</p>
 					</div>
 				</div>

@@ -1,0 +1,149 @@
+.about-wrapper {
+	min-height: 100vh;
+	padding: 2rem 1rem;
+	background: linear-gradient(180deg, #f5f8ff 0%, #eef3ff 100%);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.about-card {
+	width: 100%;
+	max-width: 860px;
+	background: #ffffff;
+	border: 1px solid #dfe6ff;
+	border-radius: 16px;
+	padding: 1.5rem;
+	box-shadow: 0 12px 28px rgba(24, 45, 93, 0.08);
+}
+
+.about-header {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.about-header p {
+	margin: 0;
+	color: #5f6f9f;
+	font-size: 0.95rem;
+}
+
+.about-header h1 {
+	margin: 0.35rem 0 0;
+	color: #233463;
+}
+
+.profile-section {
+	display: grid;
+	grid-template-columns: 140px 1fr;
+	gap: 1rem;
+	align-items: center;
+	padding: 1rem;
+	background: #f8faff;
+	border: 1px solid #e4ebff;
+	border-radius: 12px;
+}
+
+.profile-section img {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 4px solid #ffffff;
+	box-shadow: 0 6px 18px rgba(35, 52, 99, 0.18);
+}
+
+.profile-section h2 {
+	margin: 0 0 0.4rem;
+	color: #233463;
+}
+
+.profile-section p {
+	margin: 0;
+	color: #3b4d82;
+	line-height: 1.6;
+}
+
+.skills-section,
+.timeline-section {
+	margin-top: 1.2rem;
+}
+
+.skills-section h3,
+.timeline-section h3 {
+	margin: 0 0 0.8rem;
+	color: #233463;
+}
+
+.skills-section ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem;
+}
+
+.skills-section li {
+	background: #edf2ff;
+	color: #274a99;
+	padding: 0.45rem 0.75rem;
+	border-radius: 999px;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.timeline-list {
+	display: grid;
+	gap: 0.8rem;
+}
+
+.timeline-item {
+	background: #fafbff;
+	border: 1px solid #e7ecff;
+	border-left: 4px solid #5f80ff;
+	border-radius: 10px;
+	padding: 0.8rem 0.95rem;
+}
+
+.timeline-item span {
+	display: inline-block;
+	font-size: 0.85rem;
+	color: #4761ad;
+	margin-bottom: 0.25rem;
+}
+
+.timeline-item h4 {
+	margin: 0 0 0.3rem;
+	color: #1f3366;
+}
+
+.timeline-item p {
+	margin: 0;
+	color: #3f5080;
+	line-height: 1.5;
+}
+
+.about-footer {
+	margin-top: 1.2rem;
+	text-align: center;
+	color: #5d6d9f;
+	font-size: 0.95rem;
+	border-top: 1px solid #e5ebff;
+	padding-top: 0.85rem;
+}
+
+@media (max-width: 640px) {
+	.about-card {
+		padding: 1.2rem;
+	}
+
+	.profile-section {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.profile-section img {
+		margin: 0 auto;
+	}
+}

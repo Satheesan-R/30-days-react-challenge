@@ -8,8 +8,9 @@
 
 .login-card {
   background: white;
-  padding: 30px;
-  width: 300px;
+  padding: 50px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);

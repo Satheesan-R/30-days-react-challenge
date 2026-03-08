@@ -142,11 +142,7 @@ const ContactForm = () => {
 							)}
 						</section>
 
-						<section className="location-card card">
-							<h2>Our Location</h2>
-							<p>Our Location - Colombo, Sri Lanka</p>
-							<div className="map-placeholder">Map Placeholder</div>
-						</section>
+						
 					</div>
 				</div>
 

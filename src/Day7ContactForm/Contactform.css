@@ -208,23 +208,7 @@
 	line-height: 1.45;
 }
 
-.location-card p {
-	margin: 0;
-	color: var(--text-soft);
-}
 
-.map-placeholder {
-	margin-top: 0.9rem;
-	border-radius: 12px;
-	height: 140px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #5f7899;
-	font-weight: 600;
-	border: 1px dashed #b8cce5;
-	background: repeating-linear-gradient(45deg, #edf4fd, #edf4fd 12px, #f8fbff 12px, #f8fbff 24px);
-}
 
 .cta {
 	text-align: center;

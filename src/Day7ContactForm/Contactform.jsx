@@ -71,14 +71,11 @@ const ContactForm = () => {
 						<div className="social-links">
 							<h3>Follow Us</h3>
 							<div className="social-list">
-								<a href="#" aria-label="GitHub">
+								<a href="https://github.com/Satheesan-R" target="_blank" rel="noreferrer" aria-label="GitHub">
 									GitHub
 								</a>
-								<a href="#" aria-label="LinkedIn">
+								<a href="https://www.linkedin.com/in/rajasekar-satheesan-460208332/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
 									LinkedIn
-								</a>
-								<a href="#" aria-label="Twitter">
-									Twitter
 								</a>
 							</div>
 						</div>
@@ -146,9 +143,6 @@ const ContactForm = () => {
 					</div>
 				</div>
 
-				<section className="cta card">
-					<p>Let&apos;s build something amazing together. Send us a message today!</p>
-				</section>
 			</div>
 		</section>
 	);

@@ -6,10 +6,11 @@ import LandingHero from "./Day4LandingPage/LandingHero";
 import PricingTable from "./Day5PricingPage/PricingTable";
 import AboutMe from "./Day6AboutmePage/aboutme";
 import ContactForm from "./Day7ContactForm/Contactform";
+import TodoList from "./Day8todolist/todolist";
 import "./App.css";
 
 function App() {
-  const [day, setDay] = useState(7); // change number to render different day
+  const [day, setDay] = useState(8); // change number to render different day
 
   const renderPage = () => {
     switch (day) {
@@ -20,6 +21,7 @@ function App() {
       case 5: return <PricingTable />;
       case 6: return <AboutMe />;
       case 7: return <ContactForm />;
+      case 8: return <TodoList />;
       default: return <ProfileCard />;
     }
   };
@@ -68,6 +70,12 @@ function App() {
           onClick={() => setDay(7)}
         >
           Day 7
+        </button>
+        <button
+          className={day === 8 ? "active" : ""}
+          onClick={() => setDay(8)}
+        >
+          Day 8
         </button>
       </div>
       {renderPage()}

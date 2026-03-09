@@ -29,60 +29,60 @@ const ContactForm = () => {
 	return (
 		<section className="contact-page">
 			<div className="contact-shell">
-				<header className="page-header card">
-					<h1>Contact Us</h1>
-					<p className="subtitle">
-						Have a question or want to work together? Send us a message.
-					</p>
-					<p className="intro-text">
-						We would love to hear from you. If you have any questions, suggestions,
-						or collaboration opportunities, please feel free to reach out using the
-						contact form below. We will get back to you as soon as possible.
-					</p>
-				</header>
+				<div className="unified-card">
+					<header className="page-header">
+						<h1>Contact Us</h1>
+						<p className="subtitle">
+							Have a question or want to work together? Send us a message.
+						</p>
+						<p className="intro-text">
+							We would love to hear from you. If you have any questions, suggestions,
+							or collaboration opportunities, please feel free to reach out using the
+							contact form below. We will get back to you as soon as possible.
+						</p>
+					</header>
 
-				<div className="main-grid">
-					<aside className="contact-info card">
-						<h2>Contact Information</h2>
-						<div className="info-list">
-							<div className="info-item">
-								<span className="icon-badge">L</span>
-								<div>
-									<h3>Location</h3>
-									<p>Colombo, Sri Lanka</p>
+					<div className="main-grid">
+						<aside className="contact-info">
+							<h2>Contact Information</h2>
+							<div className="info-list">
+								<div className="info-item">
+									<span className="icon-badge">L</span>
+									<div>
+										<h3>Location</h3>
+										<p>Colombo, Sri Lanka</p>
+									</div>
+								</div>
+								<div className="info-item">
+									<span className="icon-badge">E</span>
+									<div>
+										<h3>Email</h3>
+										<p>satheesan@email.com</p>
+									</div>
+								</div>
+								<div className="info-item">
+									<span className="icon-badge">P</span>
+									<div>
+										<h3>Phone</h3>
+										<p>+94 77 123 4567</p>
+									</div>
 								</div>
 							</div>
-							<div className="info-item">
-								<span className="icon-badge">E</span>
-								<div>
-									<h3>Email</h3>
-									<p>satheesan@email.com</p>
+
+							<div className="social-links">
+								<h3>Follow Us</h3>
+								<div className="social-list">
+									<a href="https://github.com/Satheesan-R" target="_blank" rel="noreferrer" aria-label="GitHub">
+										GitHub
+									</a>
+									<a href="https://www.linkedin.com/in/rajasekar-satheesan-460208332/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+										LinkedIn
+									</a>
 								</div>
 							</div>
-							<div className="info-item">
-								<span className="icon-badge">P</span>
-								<div>
-									<h3>Phone</h3>
-									<p>+94 77 123 4567</p>
-								</div>
-							</div>
-						</div>
+						</aside>
 
-						<div className="social-links">
-							<h3>Follow Us</h3>
-							<div className="social-list">
-								<a href="https://github.com/Satheesan-R" target="_blank" rel="noreferrer" aria-label="GitHub">
-									GitHub
-								</a>
-								<a href="https://www.linkedin.com/in/rajasekar-satheesan-460208332/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-									LinkedIn
-								</a>
-							</div>
-						</div>
-					</aside>
-
-					<div className="form-and-location">
-						<section className="form-card card">
+						<div className="form-section">
 							<h2>Send Us a Message</h2>
 							<form className="contact-form" onSubmit={handleSubmit}>
 								<label htmlFor="name">Name</label>
@@ -137,12 +137,9 @@ const ContactForm = () => {
 									Your message has been sent successfully! We will contact you soon.
 								</p>
 							)}
-						</section>
-
-						
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 	);

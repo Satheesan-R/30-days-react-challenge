@@ -10,7 +10,7 @@ import TodoList from "./Day8todolist/todolist";
 import "./App.css";
 
 function App() {
-  const [day, setDay] = useState(8); // change number to render different day
+  const [day, setDay] = useState(9); // change number to render different day
 
   const renderPage = () => {
     switch (day) {
@@ -22,6 +22,7 @@ function App() {
       case 6: return <AboutMe />;
       case 7: return <ContactForm />;
       case 8: return <TodoList />;
+      case 9: return <ProductGrid />;
       default: return <ProfileCard />;
     }
   };
@@ -76,6 +77,12 @@ function App() {
           onClick={() => setDay(8)}
         >
           Day 8
+        </button>
+        <button
+          className={day === 9 ? "active" : ""}
+          onClick={() => setDay(9)}
+        >
+          Day 9
         </button>
       </div>
       {renderPage()}

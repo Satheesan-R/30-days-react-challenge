@@ -1,9 +1,11 @@
 /* Product Grid Page - Minimalist Style */
 .pg-wrapper {
-  min-height: 10vh;
+  min-height: 100vh;
   background: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .pg-head {

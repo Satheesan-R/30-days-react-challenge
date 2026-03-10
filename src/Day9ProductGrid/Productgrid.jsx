@@ -102,23 +102,21 @@ const ProductGrid = () => {
 
   return (
     <div className="pg-wrapper">
-      {/* Header */}
-      <header className="pg-header">
-        <div className="pg-header-inner">
-          <div>
-            <h1 className="pg-title">Product Store</h1>
-            <p className="pg-subtitle">Discover our curated collection</p>
-          </div>
-          <button className="pg-cart-btn" onClick={() => setShowCart(true)}>
-            <span className="pg-cart-icon">🛒</span>
-            <span className="pg-cart-label">Cart</span>
-            {totalItems > 0 && <span className="pg-cart-badge">{totalItems}</span>}
-          </button>
+      {/* Header with Title and Cart */}
+      <div className="pg-head">
+        <div>
+          <h1 className="pg-title">Product Store</h1>
+          <p className="pg-subtitle">Discover our curated collection</p>
         </div>
-      </header>
+        <button className="pg-cart-btn" onClick={() => setShowCart(true)}>
+          <span className="pg-cart-icon">🛒</span>
+          <span className="pg-cart-label">Cart</span>
+          {totalItems > 0 && <span className="pg-cart-badge">{totalItems}</span>}
+        </button>
+      </div>
 
       {/* Product Grid */}
-      <main className="pg-main">
+      <div className="pg-main">
         <div className="pg-grid">
           {products.map((product) => (
             <div key={product.id} className="pg-card">
@@ -145,7 +143,7 @@ const ProductGrid = () => {
             </div>
           ))}
         </div>
-      </main>
+      </div>
 
       {/* Cart Modal */}
       {showCart && (

@@ -7,6 +7,7 @@ import PricingTable from "./Day5PricingPage/PricingTable";
 import AboutMe from "./Day6AboutmePage/aboutme";
 import ContactForm from "./Day7ContactForm/Contactform";
 import TodoList from "./Day8todolist/todolist";
+import ProductGrid from "./Day9ProductGrid/Productgrid";
 import "./App.css";
 
 function App() {

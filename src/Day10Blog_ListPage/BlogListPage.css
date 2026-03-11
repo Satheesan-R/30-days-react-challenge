@@ -3,6 +3,9 @@
 	margin: 0 auto;
 	color: #0f172a;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: #ffffff;
+	border-radius: 14px;
+	padding: 24px;
 }
 
 .blog-header {
@@ -52,14 +55,6 @@
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 18px;
-}
-
-.blog-card {
-	background: #ffffff;
-	border-radius: 14px;
-	padding: 18px;
-	border: 1px solid #e2e8f0;
-	box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
 }
 
 .blog-meta {

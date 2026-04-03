@@ -1,14 +1,13 @@
 .faq-page {
-  width: min(920px, 100%);
+  width: min(1200px, 100%);
+  min-height: 80vh;
   margin: 0 auto;
-  padding: 24px;
   color: #0f172a;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+  background: transparent;
+  border-radius: 0;
+  padding: 24px;
 
-.faq-header {
-  text-align: center;
-  margin-bottom: 22px;
 }
 
 .faq-kicker {
@@ -28,7 +27,7 @@
 
 .faq-subtitle {
   margin: 0;
-  color: #a5a9af;
+  color: #0d1014;
   font-size: 1rem;
 }
 
@@ -39,6 +38,18 @@
   box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
   overflow: hidden;
 }
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 24px 22px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faq-list {
+  width: 100%;
+}
+
 
 .faq-item + .faq-item {
   border-top: 1px solid #e2e8f0;

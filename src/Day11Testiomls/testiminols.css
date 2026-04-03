@@ -1,12 +1,12 @@
 .day11-wrap {
-  width: min(1240px, 100%);
-  min-height: 78vh;
+  width: min(1100px, 100%);
+  min-height: 70vh;
   margin: 0 auto;
   color: #0f172a;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #ffffff;
   border-radius: 14px;
-  padding: 36px 24px;
+  padding: 48px 244px;
 }
 
 .day11-title {

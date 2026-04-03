@@ -38,16 +38,17 @@ export default function Day12FAQ() {
 
   return (
     <section className="faq-page">
-      <header className="faq-header">
-        <p className="faq-kicker">Day 12 Challenge</p>
-        <h1 className="faq-title">FAQ Accordion</h1>
-        <p className="faq-subtitle">
-          A clean accordion interface with one question open at a time.
-        </p>
-      </header>
+      <div className="faq-card">
+        <header className="faq-header">
+          <p className="faq-kicker">Day 12 Challenge</p>
+          <h1 className="faq-title">FAQ Accordion</h1>
+          <p className="faq-subtitle">
+            A clean accordion interface with one question open at a time.
+          </p>
+        </header>
 
-      <div className="faq-card" role="list">
-        {faqItems.map((item, index) => {
+        <div className="faq-list" role="list">
+          {faqItems.map((item, index) => {
           const isOpen = activeIndex === index;
           const panelId = `faq-panel-${index}`;
           const buttonId = `faq-button-${index}`;
@@ -84,7 +85,8 @@ export default function Day12FAQ() {
               </div>
             </article>
           );
-        })}
+          })}
+        </div>
       </div>
     </section>
   );

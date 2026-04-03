@@ -10,6 +10,9 @@ import TodoList from "./Day8todolist/todolist";
 import ProductGrid from "./Day9ProductGrid/Productgrid";
 import BlogListPage from "./Day10Blog_ListPage/BlogListPage";
 import Day11Testiomls from "./Day11Testiomls/Day11Testiomls";
+import Day12faq from "<div className="" />
+<Day12FAQ />
+<Day12></Day12>Testiomls";
 
 import "./App.css";
 

@@ -9,7 +9,7 @@ import ContactForm from "./Day7ContactForm/Contactform";
 import TodoList from "./Day8todolist/todolist";
 import ProductGrid from "./Day9ProductGrid/Productgrid";
 import BlogListPage from "./Day10Blog_ListPage/BlogListPage";
-import Day11Testiomls from "./Day11Testiomls/Day11Testiomls";
+import Day11Testiomls from "./Day11Testiomls/testiminols";
 
 import "./App.css";
 

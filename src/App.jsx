@@ -10,11 +10,12 @@ import TodoList from "./Day8todolist/todolist";
 import ProductGrid from "./Day9ProductGrid/Productgrid";
 import BlogListPage from "./Day10Blog_ListPage/BlogListPage";
 import Day11Testiomls from "./Day11Testiomls/testiminols";
+import Day12FAQ from "./Day12FAQ/faqpage";
 
 import "./App.css";
 
 function App() {
-  const [day, setDay] = useState(11); // change number to render different day
+  const [day, setDay] = useState(12); // change number to render different day
 
   const renderPage = () => {
     switch (day) {
@@ -29,6 +30,7 @@ function App() {
       case 9: return <ProductGrid />;
       case 10: return <BlogListPage />;
       case 11: return <Day11Testiomls />;
+      case 12: return <Day12FAQ />;
       default: return <ProfileCard />;
     }
   };
@@ -101,6 +103,12 @@ function App() {
           onClick={() => setDay(11)}
         >
           Day 11
+        </button>
+        <button
+          className={day === 12 ? "active" : ""}
+          onClick={() => setDay(12)}
+        >
+          Day 12
         </button>
       </div>
       {renderPage()}

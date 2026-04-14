@@ -11,11 +11,13 @@ import ProductGrid from "./Day9ProductGrid/Productgrid";
 import BlogListPage from "./Day10Blog_ListPage/BlogListPage";
 import Day11Testiomls from "./Day11Testiomls/testiminols";
 import Day12FAQ from "./Day12FAQ/faqpage";
+import Day13MemberCard from "./Day13MemberCard/membercard";
+import Day14GalleryPage from "./Day14GalleryPage/gallerypage";
 
 import "./App.css";
 
 function App() {
-  const [day, setDay] = useState(12); // change number to render different day
+  const [day, setDay] = useState(13); // change number to render different day
 
   const renderPage = () => {
     switch (day) {
@@ -31,6 +33,8 @@ function App() {
       case 10: return <BlogListPage />;
       case 11: return <Day11Testiomls />;
       case 12: return <Day12FAQ />;
+      case 13: return <Day13MemberCard />;
+      case 14: return <Day14GalleryPage />;
       default: return <ProfileCard />;
     }
   };
@@ -109,6 +113,18 @@ function App() {
           onClick={() => setDay(12)}
         >
           Day 12
+        </button>
+        <button
+          className={day === 13 ? "active" : ""}
+          onClick={() => setDay(13)}
+        >
+          Day 13
+        </button>
+        <button
+          className={day === 14 ? "active" : ""}
+          onClick={() => setDay(14)}
+        >
+          Day 14
         </button>
       </div>
       {renderPage()}

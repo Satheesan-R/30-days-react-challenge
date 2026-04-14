@@ -1,0 +1,107 @@
+.member-page {
+	min-height: 100vh;
+	padding: 18px 0 36px;
+}
+
+.member-page-head {
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.member-kicker {
+	margin: 0;
+	color: #bfdbfe;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.78rem;
+}
+
+.member-title {
+	margin: 10px 0 8px;
+	color: #f8fafc;
+	font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+}
+
+.member-subtitle {
+	margin: 0 auto;
+	max-width: 620px;
+	color: #dbeafe;
+	line-height: 1.65;
+}
+
+.member-grid {
+	width: min(1100px, 100%);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.member-card {
+	background: rgba(255, 255, 255, 0.16);
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 18px;
+	overflow: hidden;
+	backdrop-filter: blur(6px);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 14px 28px rgba(2, 6, 23, 0.25);
+}
+
+.member-photo {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+
+.member-content {
+	padding: 16px;
+}
+
+.member-name {
+	margin: 0 0 8px;
+	color: #f8fafc;
+	font-size: 1.15rem;
+}
+
+.member-role {
+	margin: 0 0 14px;
+	color: #dbeafe;
+	font-size: 0.95rem;
+}
+
+.member-socials {
+	display: flex;
+	gap: 10px;
+}
+
+.social-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 40px;
+	height: 34px;
+	border-radius: 999px;
+	background: rgba(248, 250, 252, 0.2);
+	color: #f8fafc;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 0.78rem;
+	border: 1px solid rgba(248, 250, 252, 0.34);
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.social-btn:hover {
+	background: #f8fafc;
+	color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+	.member-photo {
+		height: 200px;
+	}
+}
